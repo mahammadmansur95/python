@@ -98,3 +98,27 @@ for i,letter in enumerate('abcde'):
     print("At index {} the letter is {}".format(i,letter))
     
 input('Enter Something into this box: ')
+
+
+
+
+
+#Find the position of a  substring within the string
+#This gives us the first index during a left to right scan. If the string is not found, it returns -1
+print "Find the index from which the substring 'llo' begins within the test string"
+print testString1.find('llo')
+
+print "Now, let's look for a substring which is not a part of the given string"
+print testString1.find('xxy')
+
+# Now, trying to find the index of a substring between specified indexes only
+print "Now, trying to find a substring between specified indexes only: looking for 'l' between 4 and 9"
+print testString1.find('l',4,9)
+
+# rfind is used, to find the index from the reverse
+# So, testString1.rfind('l') will look for the last index of l in the string
+print "find('l') on the given string returns the following index (scanning the string from left to right):"
+print testString1.find('l')
+
+print "rfind('l') on the given string returns the following index (this scans the string from right to left):"
+print testString1.rfind('l')
